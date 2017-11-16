@@ -29,7 +29,7 @@
 
             <div class="col-md-4">
                 <div class="input-group">
-                    <input type="text" class="form-control" id="search-input" placeholder="Search for an artist...">
+                    <input type="text" class="form-control" id="search-input" placeholder="Search for an artist or band...">
                     <span class="input-group-btn">
                             <button class="btn btn-default" type="button" id="add-artist">Go!</button>
                     </span>
@@ -47,15 +47,12 @@
 
                 <div class="col-md-5" id="left">
                     <div class="page-header">
-                        <h1>Spotify API</h1>
+                        <h1>Top Tracks</h1>
                     </div>
 
                     <div class="row">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique, nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae felis vulputate pretium. Nullam commodo, est ac auctor ornare,
-                            eros nisi fringilla sem, non pulvinar tortor lorem sit amet sem. Aenean quis erat facilisis, porttitor ex cursus, luctus enim. Curabitur et metus in lacus tristique sagittis et in lorem. Nunc id nisi et neque fringilla ultricies.
-                            Aenean at feugiat elit, a posuere justo. Pellentesque egestas dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta purus, id posuere sem congue a.
-                        </p>
+                        <div id="tracksContainer">
+                        </div>
                     </div>
                 </div>
 
@@ -64,16 +61,13 @@
                 <div class="col-md-5" id="right">
                     <div class="row">
                         <div class="page-header">
-                            <h1>SongKick API</h1>
+                            <h1>Related Artist</h1>
                         </div>
                     </div>
 
                     <div class="row">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque dignissim, felis ut dictum tristique, nibh erat feugiat libero, sit amet fringilla mauris velit in mi. Duis tempus felis vitae felis vulputate pretium. Nullam commodo, est ac auctor ornare,
-                            eros nisi fringilla sem, non pulvinar tortor lorem sit amet sem. Aenean quis erat facilisis, porttitor ex cursus, luctus enim. Curabitur et metus in lacus tristique sagittis et in lorem. Nunc id nisi et neque fringilla ultricies.
-                            Aenean at feugiat elit, a posuere justo. Pellentesque egestas dolor et nisi venenatis, nec fermentum urna fringilla. Etiam efficitur porta purus, id posuere sem congue a.
-                        </p>
+                        <div id="relatedArtistContainer">
+                        </div>
                     </div>
 
                 </div>
@@ -98,6 +92,8 @@
     </div>
     </div>
 
+    <script src="js.js">
+    </script>
 
 </body>
 
