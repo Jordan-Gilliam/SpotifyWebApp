@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
     <title>Head Title</title>
 </head>
 
@@ -43,10 +44,9 @@
         <div class="searchContent">
             <div class="row">
 
-                <div class="col-md-1"></div>
 
-                <div class="col-md-5" id="left">
-                    <div class="page-header">
+                <div class="col-md-4" id="left">
+                    <div class="row">
                         <h1>Top Tracks</h1>
                     </div>
 
@@ -56,13 +56,21 @@
                     </div>
                 </div>
 
-
-
-                <div class="col-md-5" id="right">
+                <div class="col-md-4" id="middle">
                     <div class="row">
-                        <div class="page-header">
-                            <h1>Related Artist</h1>
+                        <h1>Search History</h1>
+                    </div>
+
+                    <div class="row">
+                        <div id="searchHistoryContainer">
                         </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4" id="right">
+                    <div class="row">
+                        <h1>Related Artist</h1>
                     </div>
 
                     <div class="row">
@@ -72,7 +80,6 @@
 
                 </div>
 
-                <div class="col-md-1"></div>
 
             </div>
         </div>
@@ -93,6 +100,9 @@
     </div>
 
     <script src="js.js">
+    </script>
+
+    <script src="firebase.js">
     </script>
 
 </body>
