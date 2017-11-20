@@ -7,6 +7,16 @@ $(document).ready(function() {
 
 
     $('.carousel').carousel();
+    
+     $('.collapsible').collapsible({
+        onOpen: function(el) {
+            var carousel = el.find('.carousel');
+            if (carousel.length) {
+                carousel.trigger('carouselNext', [0.000001]);
+            }
+        }
+    });
+    
 });
 
 // });
