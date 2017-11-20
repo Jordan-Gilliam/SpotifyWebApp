@@ -48,14 +48,14 @@ nav ul a {
 
 /*Search Button*/
 
-#searchButton {
+#add-artist {
     padding: 6px 8px;
     background-color: #e7e7e7;
     color: black;
     border-radius: 2px;
 }
 
-#searchButton:hover {
+#add-artist:hover {
     background-color: lightgrey;
 }
 
@@ -125,5 +125,10 @@ textarea.materialize-textarea {
     /*margin-top: 10%;*/
     text-align: center;
     background: linear-gradient(#4ba2ac, #50c9ba);
+
+}
+/* Adds space between Concert Results  */
+.searchResult {
+    padding-bottom: 20px;
 
 }

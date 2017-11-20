@@ -4,6 +4,9 @@
 <head>
     <title>Project One</title>
 
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+
     <!-- Compiled and minified CSS materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
@@ -20,6 +23,10 @@
 
     <!--CSS STYLE-->
     <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <!-- MomentJS Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.js"></script>
+
 
 </head>
 
@@ -57,8 +64,10 @@
         <!--Search-->
         <div class="material-icons" id="searchIcon">search</div><span class="subheader" id="searchHeader">Search for Artist</span>
         <form>
-            <input id="searchInput" type="text" name="Search Artist" />
-            <input id="searchButton" type="submit" value="Search" />
+            <!--Input-->
+            <input id="search-input" type="text" name="Search Artist" />
+            <!--Button-->
+            <input id="add-artist" type="submit" value="Search" />
         </form>
 
         <!--Previous Searches-->
@@ -67,7 +76,8 @@
         </li>
 
         <li><a class="subheader">Previous Searches</a></li>
-        <li><a class="waves-effect" href="#!">Paramore</a></li>
+        <div id="previousSearch"></div>
+
     </ul>
 
 
@@ -89,22 +99,24 @@
                 <!--Collection-->
                 <ul class="collapsible collection" data-collapsible="accordion">
 
-                    <!--Artist Info-->
+                    <!--Top Track-->
                     <li class="collection-item avatar">
                         <div class="collapsible-header">
                             <img src="images/singerIcon.png" alt="" class="circle">
-                            <div class="title">Artist Info</div>
+                            <div class="title">Top Tracks</div>
                             <a href="#!" class="secondary-content"><i class="material-icons">arrow_drop_down</i></a>
                         </div>
                         <div class="collapsible-body">
-                            <p><span id="artistInfo">Lorem ipsum dolor sit amet.</span></p>
+                            <!--<p><span id="artistInfo">Lorem ipsum dolor sit amet.</span></p>-->
 
 
-                            <div class="carousel">
-                                <a class="carousel-item" href="#one!"><img src="https://images.genius.com/d25c57d6522fcf3770b7efb47189916e.500x500x1.jpg"></a>
-                                <a class="carousel-item" href="#two!"><img src="https://vignette.wikia.nocookie.net/paramore/images/9/9a/Escape_Route.png/revision/latest?cb=20140430195901"></a>
-                                <a class="carousel-item" href="#three!"><img src="http://www.billboard.com/files/media/paramore-after-laughter-album-art-2017-billboard-1240.jpg"></a>
-                                <a class="carousel-item" href="#four!"><img src="https://upload.wikimedia.org/wikipedia/en/e/eb/ParamoreParamore.png"></a>
+
+                            <!--Carousel Pictures-->
+                            <div class="carousel" id="tracksContainer">
+                                <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+                                <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+                                <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+                                <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
                                 <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
                             </div>
 
@@ -121,7 +133,8 @@
                             <a href="#!" class="secondary-content"><i class="material-icons">arrow_drop_down</i></a>
                         </div>
                         <div class="collapsible-body">
-                            <p><span id="concertSchedule">Lorem ipsum dolor sit amet.</span></p>
+                            <p id="concertSchedule">
+                            </p>
                         </div>
                     </li>
 
@@ -134,6 +147,18 @@
                         </div>
                         <div class="collapsible-body">
                             <p><span id="youTube">Lorem ipsum dolor sit amet.</span></p>
+                        </div>
+                    </li>
+
+                    <!--Related Artists-->
+                    <li class="collection-item avatar">
+                        <div class="collapsible-header">
+                            <img src="images/YouTubeMusic.png" alt="" class="circle">
+                            <div class="title">Related Artists</div>
+                            <a href="#!" class="secondary-content"><i class="material-icons">arrow_drop_down</i></a>
+                        </div>
+                        <div class="collapsible-body">
+                            <div id="relatedArtistContainer"></div>
                         </div>
                     </li>
                 </ul>
@@ -160,7 +185,13 @@
     <!--</footer>-->
 
 
-    <script type="text/javascript" src="js.js"></script>
+
+    <script type="text/javascript" src="javascript/spotifyAPI.js"></script>
+    <script type="text/javascript" src="javascript/youAPI.js"></script>
+    <script type="text/javascript" src="javascript/ticketmasterAPI.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=onClientLoad=init" type="text/javascript"></script>
+    <script type="text/javascript" src="javascript/js.js"></script>
+    <script type="text/javascript" src="javascript/firebase.js"></script>
 </body>
 
 </html>
