@@ -43,8 +43,7 @@ $(document).ready(function() {
         // Console log results
         console.log("Artist: " + newArtistInput);
 
-        // Clear text on input box
-        $("#search-input").val("");
+
 
     }); //end of on click function
     // =======================================================================

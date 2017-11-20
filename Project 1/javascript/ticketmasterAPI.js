@@ -1,5 +1,4 @@
 $(document).on('click', '#add-artist', function(event) {
-
     event.preventDefault();
     console.log("buttonworks");
 
@@ -9,7 +8,7 @@ $(document).on('click', '#add-artist', function(event) {
 
     var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?&countryCode=US&sort'date,asc'&keyword=" +
         artist + "&apikey=mUtsvjjuP9U7p30hNtIZXpGAI0rgbThb"
-
+    console.log(queryURL)
     $.ajax({
         type: "GET",
         url: queryURL,
