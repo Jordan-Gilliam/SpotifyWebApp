@@ -10,6 +10,13 @@ $(document).ready(function() {
     //FUNCTIONS
     //==========================
 
+    //use server proxy to make API work - prior to learning server
+    $.ajaxPrefilter(function(options) {
+        if (options.crossDomain && jQuery.support.cors) {
+            options.url = 'https://uncc-cors-proxy.herokuapp.com/' + options.url;
+        }
+    });
+
     function createAccessToken(callback) {
 
         var queryURL = "https://accounts.spotify.com/api/token";
@@ -17,11 +24,11 @@ $(document).ready(function() {
         $.ajax({
             url: queryURL,
             method: "POST",
-            body: {
+            data: {
                 "grant_type": "client_credentials"
             },
             headers: {
-                "Authorization": "Basic <base64 encoded fcbb2faaa19441e08248de09c5b96d04:7cd555a722b742c3b74b17695b7aa057>"
+                "Authorization": "Basic " + btoa("fcbb2faaa19441e08248de09c5b96d04:7cd555a722b742c3b74b17695b7aa057")
             }
         }).done(function(response) {
             console.log(response.access_token);
@@ -46,9 +53,7 @@ $(document).ready(function() {
     function searchWithToken(accessToken) {
         var artist = $("#search-input").val().trim();
         spotifySearch(accessToken, artist);
-
     }
-
 
     function spotifySearch(accessToken, artist) {
 
@@ -67,8 +72,8 @@ $(document).ready(function() {
             console.log(results);
             var artistID = results.artists.items[0].id;
             // console.log(results.artists.items[0]);
-            spotifyTopTracks(artistID);
-            spotifyRelatedArtist(artistID);
+            spotifyTopTracks(accessToken, artistID);
+            spotifyRelatedArtist(accessToken, artistID);
         });
 
     }
@@ -130,7 +135,9 @@ $(document).ready(function() {
     function spotifyRelatedArtist(accessToken, artistID) {
         $("#relatedArtistContainer").empty();
 
+        console.log(artistID);
         var queryURL = "https://api.spotify.com/v1/artists/" + artistID + "/related-artists";
+
 
         $.ajax({
             url: queryURL,
@@ -169,6 +176,9 @@ $(document).ready(function() {
 
     $("#add-artist").on("click", function(event) {
         event.preventDefault();
+        var artist = $("#search-input").val().trim();
+        console.log(artist);
+
         getAccessToken(searchWithToken);
     });
 

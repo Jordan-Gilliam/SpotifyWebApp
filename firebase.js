@@ -14,17 +14,17 @@ firebase.initializeApp(config);
 var database = firebase.database();
 
 
-$("#add-artist").on("click", function(event) {
-    event.preventDefault();
+// $("#add-artist").on("click", function(event) {
+//     event.preventDefault();
 
-    var searchInput = $("#search-input").val().trim();
+//     var searchInput = $("#search-input").val().trim();
 
-    database.ref().push({
-        searchInput: searchInput
-    });
+//     database.ref().push({
+//         searchInput: searchInput
+//     });
 
-    $("#search-input").val("");
-});
+//     // $("#search-input").val("");
+// });
 
 
 
