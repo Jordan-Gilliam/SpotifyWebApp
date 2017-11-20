@@ -2,7 +2,11 @@
 <html>
 
     <head>
+
         <title>Project One</title>
+
+        <!--Firebase-->
+        <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
 
         <!-- Compiled and minified CSS materialize -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -20,6 +24,10 @@
 
         <!--CSS STYLE-->
         <link rel="stylesheet" href="style.css" type="text/css" />
+
+        <!-- MomentJS Script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.js"></script>
+
 
     </head>
 
@@ -129,7 +137,8 @@
                                 <a href="#!" class="secondary-content"><i class="material-icons">arrow_drop_down</i></a>
                             </div>
                             <div class="collapsible-body">
-                                <p><span id="concertSchedule">Lorem ipsum dolor sit amet.</span></p>
+                                <p id="concertSchedule">
+                                </p>
                             </div>
                         </li>
 
@@ -179,11 +188,12 @@
         <!--    </div>-->
         <!--</footer>-->
 
-
-        <script type="text/javascript" src="js.js"></script>
+        <script type="text/javascript" src="javascript/spotifyAPI.js"></script>
         <script type="text/javascript" src="javascript/youAPI.js"></script>
+        <script type="text/javascript" src="javascript/ticketmasterAPI.js"></script>
         <script src="https://apis.google.com/js/client.js?onload=onClientLoad=init" type="text/javascript"></script>
-
+        <script type="text/javascript" src="js.js"></script>
+        <script type="text/javascript" src="firebase.js"></script>
     </body>
 
 </html>
