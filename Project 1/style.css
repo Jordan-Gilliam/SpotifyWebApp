@@ -1,0 +1,129 @@
+body {
+    /*background-image: url("images/body.jpg")*/
+}
+
+/*Top Navbar*/
+
+/*================================================================================*/
+
+nav {
+    /*background: linear-gradient(#4ba2ac, #50c9ba);*/
+    /*background-color: #ff5700;*/
+    /*background-image: url("images/background.jpg");*/
+    background: #ededed;
+    height: 90px;
+    padding-left: 350px;
+    padding-right: 50px;
+    padding-top: 10px;
+}
+
+a.brand-logo {
+    color: darkgrey;
+}
+
+nav ul a {
+    color: darkgrey;
+    font-size: 18px;
+}
+
+
+
+/*Side Navbar*/
+
+/*===============================================================================*/
+
+/*Search Header*/
+
+#searchIcon {
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 5%;
+
+}
+
+#searchHeader {
+    font-size: 20px;
+}
+
+
+/*Search Button*/
+
+#searchButton {
+    padding: 6px 8px;
+    background-color: #e7e7e7;
+    color: black;
+    border-radius: 2px;
+}
+
+#searchButton:hover {
+    background-color: lightgrey;
+}
+
+
+/*Search Artist Input*/
+
+input:not([type]),
+input[type=text]:not(.browser-default),
+input[type=password]:not(.browser-default),
+input[type=email]:not(.browser-default),
+input[type=url]:not(.browser-default),
+input[type=time]:not(.browser-default),
+input[type=date]:not(.browser-default),
+input[type=datetime]:not(.browser-default),
+input[type=datetime-local]:not(.browser-default),
+input[type=tel]:not(.browser-default),
+input[type=number]:not(.browser-default),
+input[type=search]:not(.browser-default),
+textarea.materialize-textarea {
+    border: 1px solid grey;
+    height: 2rem;
+    width: 60%;
+    margin-left: 5%;
+
+}
+
+
+/*Body*/
+
+/*================================================================================*/
+
+/*Container*/
+
+.container {
+    width: 90%;
+    padding-left: 300px;
+}
+
+/*Main Content Box*/
+
+#mainContent {
+    background-color: #f0eec9;
+    box-shadow: 5px 5px 6px lightgrey;
+    padding: 0px 30px;
+}
+
+
+/*Collection when activated*/
+
+.collection .collection-item.active {
+    background-color: white;
+    color: grey;
+}
+
+/*Collection*/
+
+.collection .collection-item {
+    border-bottom: 0px;
+
+
+}
+
+
+
+
+.page-footer {
+    /*margin-top: 10%;*/
+    text-align: center;
+    background: linear-gradient(#4ba2ac, #50c9ba);
+
+}
