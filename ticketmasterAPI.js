@@ -1,8 +1,3 @@
-// var person = $(this).attr("data-name");
-
-
-
-
 $(document).on('click', '#add-artist', function(event) {
 
     event.preventDefault();
@@ -50,18 +45,11 @@ $(document).on('click', '#add-artist', function(event) {
                 //link to TicketMaster
                 var buyLink = response._embedded.events[i].url;
                 console.log("here is your link" + buyLink);
-                // //link from Ticket Master to go buy tickets
-                // var buyLink2 = $("<a>").html("buy your tickets here: " + buyLink);
                 //information returned from TicketMaster API
                 var results = $("<p>").html("Tour Name: " + tourName + "<br>" +
                     "Concert Date: " + tourDate + " Time: " + tourTimeC + "<br>" +
                     "Venue: " + venue + " - " + showCity + ", " + showState + "<br>" +
                     "Ticket Link: " + "<a href='" + buyLink + "' target=_'blank'>Click here for Tickets</a>");
-
-
-                // <a href = "buyLink" target = "_blank">Click< Here</a>
-
-
 
                 //Appending the paragraph tag we made for results of API return
                 concertDiv.append(results);
