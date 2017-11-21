@@ -50,6 +50,8 @@ $(document).ready(function() {
         newArtistInput = titleCase(newArtistInput);
 
 
+        $("#show").text(newArtistInput);
+
 
 
 
