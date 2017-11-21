@@ -96,27 +96,25 @@ $(document).ready(function() {
 
 
 
-            for (var i = 0; i < 5; i++) {
+            for (var i = 0; i < Math.min(results.tracks.length, 5); i++) {
                 var albumName = results.tracks[i].album.name;
                 var trackName = results.tracks[i].name;
-                var trackURL = results.tracks[i].external_urls.spotify;
 
                 var albumDiv = $("<a>");
                 albumDiv.addClass("carousel-item");
                 albumDiv.attr("target", "_blank");
-                albumDiv.attr("href", trackURL);
+                albumDiv.text("Top track: " + trackName);
 
                 var image = $("<img>");
-                image.attr("src", results.tracks[i].album.images[2].url);
+                image.attr("src", results.tracks[i].album.images[1].url);
                 console.log(image);
 
                 albumDiv.append(image);
-
+                $("#tracksContainer").append(albumDiv);
             }
 
-            $("#tracksContainer").append(albumDiv);
-
-            $('.carousel').carousel();
+            $("#tracksContainer").removeClass("initialized");
+            $("#tracksContainer").carousel();
 
         });
     }
