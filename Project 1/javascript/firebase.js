@@ -50,10 +50,6 @@ $(document).ready(function() {
         newArtistInput = titleCase(newArtistInput);
 
 
-
-
-
-
         //   Push information into Firebase
 
         db.ref().push({
@@ -86,7 +82,7 @@ $(document).ready(function() {
         console.log("artist name: " + artist);
 
 
-
+        // Comparing previous search to recent search
         if (searches.indexOf(artist) > -1) {
             console.log("artist already exists");
         }
@@ -102,7 +98,7 @@ $(document).ready(function() {
             //append new div to html**switched to prepend**
             $("#previousSearch").prepend(newDiv);
 
-
+            // pushing artist to array
             searches.push(artist);
         }
 
