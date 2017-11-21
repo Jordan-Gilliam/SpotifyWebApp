@@ -18,9 +18,11 @@ $(document).ready(function() {
     //   variables
     // ================================================================================
 
-    var searchInput;
     var newArtistInput;
     var artist;
+    var searches = [];
+
+
 
 
     // Submit button function
@@ -46,6 +48,7 @@ $(document).ready(function() {
         // // console.log(titleCase(newArtistInput));
 
         newArtistInput = titleCase(newArtistInput);
+
 
 
 
@@ -84,23 +87,24 @@ $(document).ready(function() {
 
 
 
-        // if (newArtistInput === artist) {
-        //     alert("artist already exists");
-        // }
-        // else {
+        if (searches.indexOf(artist) > -1) {
+            console.log("artist already exists");
+        }
+        else {
 
 
 
-        // Write new information to html
-        //new div
-        var newDiv = $('<li><a class="waves-effect">' + artist + '</a></li>');
+            // Write new information to html
+            //new div
+            var newDiv = $('<li><a class="waves-effect">' + artist + '</a></li>');
 
 
-        //append new div to html**switched to prepend**
-        $("#previousSearch").prepend(newDiv);
+            //append new div to html**switched to prepend**
+            $("#previousSearch").prepend(newDiv);
 
 
-        // }
+            searches.push(artist);
+        }
 
 
 
