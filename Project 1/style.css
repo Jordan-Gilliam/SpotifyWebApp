@@ -107,8 +107,15 @@ textarea.materialize-textarea {
 
 #icon {
     color: white;
+    font-size: 40px;
+    line-height: 100px;
+}
+
+#displayArtist {
+    color: white;
     font-size: 50px;
     line-height: 100px;
+    font-weight: bold;
 }
 
 /*Main Content Box*/
