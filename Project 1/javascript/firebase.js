@@ -64,8 +64,8 @@ $(document).ready(function() {
         var newDiv = $('<li><a class="waves-effect">' + artist + '</a></li>');
 
 
-        //append new div to html
-        $("#previousSearch").append(newDiv);
+        //append new div to html**switched to prepend**
+        $("#previousSearch").prepend(newDiv);
 
 
 
