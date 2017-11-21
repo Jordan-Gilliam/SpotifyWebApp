@@ -137,7 +137,8 @@ textarea.materialize-textarea {
 
 
 @media only screen and (max-width : 992px) {
-      header, main, footer {
+      .container,
+    nav {
         padding-left: 0;
       }
 }
