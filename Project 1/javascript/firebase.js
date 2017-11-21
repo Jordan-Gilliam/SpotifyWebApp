@@ -92,7 +92,7 @@ $(document).ready(function() {
 
             // Write new information to html
             //new div
-            var newDiv = $('<li><a class="waves-effect">' + artist + '</a></li>');
+            var newDiv = $('<li class="search-keyword"><a class="waves-effect">' + artist + '</a></li>');
 
 
             //append new div to html**switched to prepend**
