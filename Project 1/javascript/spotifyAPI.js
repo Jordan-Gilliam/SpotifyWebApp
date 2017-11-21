@@ -52,7 +52,7 @@ $(document).ready(function() {
     function searchWithToken(accessToken) {
         var artist = $("#search-input").val().trim();
         spotifySearch(accessToken, artist);
-        $("#displayArtist").text(artist);
+        $("#displayArtist").text(titleCase(artist));
     }
 
     function reSearch(accessToken) {
@@ -157,6 +157,16 @@ $(document).ready(function() {
 
     }
 
+    function titleCase(str) {
+        str = str.toLowerCase().split(' ');
+
+        for (var i = 0; i < str.length; i++) {
+            str[i] = str[i].split('');
+            str[i][0] = str[i][0].toUpperCase();
+            str[i] = str[i].join('');
+        }
+        return str.join(' ');
+    }
 
 
     //MAIN PROCESS
