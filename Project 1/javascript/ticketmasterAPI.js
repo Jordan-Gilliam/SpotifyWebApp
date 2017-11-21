@@ -1,11 +1,6 @@
-$(document).on('click', '#add-artist', function(event) {
-    event.preventDefault();
+function handleSearch(artist) {
     console.log("buttonworks");
-
-
-    var artist = $("#search-input").val().trim();
     console.log(artist);
-
     var queryURL = "https://app.ticketmaster.com/discovery/v2/events.json?&countryCode=US&sort'date,asc'&keyword=" +
         artist + "&apikey=mUtsvjjuP9U7p30hNtIZXpGAI0rgbThb"
     console.log(queryURL)
@@ -19,8 +14,7 @@ $(document).on('click', '#add-artist', function(event) {
             //Creating a variable to shorten variables below
             var evts = response._embedded.events
 
-            //clears Search bar input
-            $("#search-input").val("");
+            //Clears TM info to create space for new info
             $("#concertSchedule").empty();
 
             for (var i = 0; i < 5; i++) {
@@ -63,4 +57,29 @@ $(document).on('click', '#add-artist', function(event) {
             // This time, we do not end up here!
         }
     });
+
+
+}
+
+$(document).on('click', '#add-artist', function(event) {
+    event.preventDefault();
+    //pulling User input 
+    var artist = $("#search-input").val().trim();
+    console.log(artist);
+    //calling handleSearch function with argument 'artist'
+    handleSearch(artist);
+    //clears Search bar input
+    $("#search-input").val("");
+
+});
+
+//
+
+//This is how the user can click 'recent search' artists
+$(document).on('click', '.search-keyword', function() {
+    //assigning artist var to what name was clicked
+    var artist = $(this).text();
+    //calling handleSearch function with argument from right above
+    handleSearch(artist);
+
 });
