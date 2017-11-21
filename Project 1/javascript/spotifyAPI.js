@@ -94,15 +94,17 @@ $(document).ready(function() {
             var results = response;
             console.log(results);
 
-            var albumDiv = $("<a>");
-            albumDiv.addClass("carousel-item");
-            albumDiv.attr("target", "_blank");
-            albumDiv.attr("href", trackURL);
+
 
             for (var i = 0; i < 5; i++) {
                 var albumName = results.tracks[i].album.name;
                 var trackName = results.tracks[i].name;
                 var trackURL = results.tracks[i].external_urls.spotify;
+
+                var albumDiv = $("<a>");
+                albumDiv.addClass("carousel-item");
+                albumDiv.attr("target", "_blank");
+                albumDiv.attr("href", trackURL);
 
                 var image = $("<img>");
                 image.attr("src", results.tracks[i].album.images[2].url);
@@ -114,6 +116,7 @@ $(document).ready(function() {
 
             $("#tracksContainer").append(albumDiv);
 
+            $('.carousel').carousel();
 
         });
     }
