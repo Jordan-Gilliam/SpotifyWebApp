@@ -22,6 +22,9 @@
     <!--CSS STYLE-->
     <link rel="stylesheet" href="style.css" type="text/css" />
 
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Fugaz+One" rel="stylesheet">
+
     <!-- MomentJS Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.js"></script>
 
@@ -30,40 +33,48 @@
 <body>
 
     <!--Nav Bar-->
-    <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Project One</a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">About Us</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!--<nav>-->
+    <!--    <div class="nav-wrapper">-->
+    <!--        <a href="#" class="brand-logo">Music Hub</a>-->
+    <!--        <ul id="nav-mobile" class="right hide-on-med-and-down">-->
+    <!--            <li><a href="sass.html">About Us</a></li>-->
+    <!--        </ul>-->
+    <!--    </div>-->
+    <!--</nav>-->
 
 
     <!--Sidebar nav-->
     <ul id="slide-out" class="side-nav fixed">
-        <li>
-            <div class="user-view">
-                <div class="background">
-                    <img src="images/background.jpg">
+
+        <div class="stuck">
+
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                    </div>
+                    <center><img src="images/finalLogo.png" height="150px" width="200px"></center>
                 </div>
-                <center><img src="images/musicLogo.png" height="150px" width="150px"></center>
-            </div>
-        </li>
+            </li>
 
-        <!--Search-->
-        <div class="material-icons" id="searchIcon">search</div><span class="subheader" id="searchHeader">Search for Artist</span>
-        <form>
-            <!--Input-->
-            <input id="search-input" type="text" name="Search Artist" />
-            <!--Button-->
-            <input id="add-artist" type="submit" value="Search" />
-        </form>
+            <!--Search-->
+            <div class="material-icons" id="searchIcon">search</div><span class="subheader" id="searchHeader">Search for Artist</span>
+            <form>
+                <!--Input-->
+                <input id="search-input" type="text" name="Search Artist" />
+                <!--Button-->
+                <input id="add-artist" type="submit" value="Search" />
+            </form>
 
-        <!--Previous Searches-->
-        <li>
-            <div class="divider"></div>
-        </li>
+            <!--Previous Searches-->
+            <li>
+                <div class="divider"></div>
+            </li>
+
+
+
+        </div>
+
+
 
         <li><a class="subheader">Previous Searches</a></li>
         <div id="previousSearch"></div>
@@ -80,14 +91,18 @@
         <!--Main Row-->
         <div class="row">
 
+            <br>
+            <br>
+            <br>
 
             <!--Main Content-->
             <div class="col s12" id="mainContent">
 
-                <br>
 
+                <i class="material-icons" id="icon">add</i><span id="show"></span>
                 <!--Collection-->
                 <ul class="collapsible collection" data-collapsible="accordion">
+
 
                     <!--Top Track-->
                     <li class="collection-item avatar">
@@ -101,7 +116,7 @@
 
                             <!--Carousel Pictures-->
                             <div class="carousel" id="tracksContainer">
-                                
+
                             </div>
                         </div>
                     </li>
