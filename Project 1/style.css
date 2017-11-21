@@ -151,6 +151,20 @@ textarea.materialize-textarea {
 
 }
 
+.carousel-item {
+    color: black;
+    text-align: center;
+}
+
+.collapsible-body,
+.waves-effect {
+    color: black;
+}
+
+.search-keyword:hover {
+    text-decoration: underline;
+}
+
 
 @media only screen and (max-width: 992px) {
     .container,
