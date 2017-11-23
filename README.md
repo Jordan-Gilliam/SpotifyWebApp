@@ -9,7 +9,7 @@ One search gets you all of the info you need.
 Search on the left or by clicking on one of the trending artist queried below.
 Search example
 ```
-![Search Example](<master>/SpotifyWebApp/Project1/images/searchSS.png?raw=true "Search")
+![Search Example](SpotifyWebApp/Project 1/images/searchSS.PNG)
 ```
 
 Click the dropdown to reveal the artists top tracks.
