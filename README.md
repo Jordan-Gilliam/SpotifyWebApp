@@ -6,28 +6,27 @@ One search gets you all of the info you need.
 
 ## Getting Started
 
-Search on the left or by clicking on one of the trending artist queried below.
-Search example
-```
-![Search Example](SpotifyWebApp/Project 1/images/searchSS.PNG)
-```
+### Search on the left or by clicking on one of the trending artist queried below.
 
-Click the dropdown to reveal the artists top tracks.
-```
-![Top Tracks Example](<master>/SpotifyWebApp/Project1/images/topTSS.png?raw=true "Top Tracks")
-```
-The next dropdown informs you of the 5 shows.
-```
-![Upcoming shows example](<master>/SpotifyWebApp/Project1/images/showSS.png?raw=true "Upcoming shows")
-```
-Play the artists top Youtube Video.
-```
-![Youtube embedded example](<master>/SpotifyWebApp/Project1/images/youTSS.png?raw=true "Youtube")
-```
-Or even find related Artists.
-```
-![Related artist example](<master>/SpotifyWebApp/Project1/images/relatedASS.png?raw=true "Youtube")
-```
+
+<img src="Project 1/images/searchSS.PNG" height="300" width="200">
+
+
+### Click the dropdown to reveal the artists top tracks.
+
+<img src="Project 1/images/topTSS.PNG">
+
+### The next dropdown informs you of the 5 shows.
+
+<img src="Project 1/images/showsSS.PNG">
+
+### Play the artists top Youtube Video.
+
+<img src="Project 1/images/youTSS.PNG">
+
+### Or even find related Artists.
+
+<img src="Project 1/images/relatedASS.PNG">
 
 ### Prerequisites
 
