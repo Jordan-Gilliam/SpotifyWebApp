@@ -9,24 +9,24 @@ One search gets you all of the info you need.
 Search on the left or by clicking on one of the trending artist queried below.
 Search example
 ```
-![Search Example](/../<screenshots>/SpotifyWebApp/Project1/images/searchSS.png?raw=true "Search")
+![Search Example](/../<master>/SpotifyWebApp/Project1/images/searchSS.png?raw=true "Search")
 ```
 
 Click the dropdown to reveal the artists top tracks.
 ```
-![Top Tracks Example](/../<screenshots>/SpotifyWebApp/Project1/images/topTSS.png?raw=true "Top Tracks")
+![Top Tracks Example](/../<master>/SpotifyWebApp/Project1/images/topTSS.png?raw=true "Top Tracks")
 ```
 The next dropdown informs you of the 5 shows.
 ```
-![Upcoming shows example](/../<screenshots>/SpotifyWebApp/Project1/images/showSS.png?raw=true "Upcoming shows")
+![Upcoming shows example](/../<master>/SpotifyWebApp/Project1/images/showSS.png?raw=true "Upcoming shows")
 ```
 Play the artists top Youtube Video.
 ```
-![Youtube embedded example](/../<screenshots>/SpotifyWebApp/Project1/images/youTSS.png?raw=true "Youtube")
+![Youtube embedded example](/../<master>/SpotifyWebApp/Project1/images/youTSS.png?raw=true "Youtube")
 ```
 Or even find related Artists.
 ```
-![Related artist example](/../<screenshots>/SpotifyWebApp/Project1/images/relatedASS.png?raw=true "Youtube")
+![Related artist example](/../<master>/SpotifyWebApp/Project1/images/relatedASS.png?raw=true "Youtube")
 ```
 
 ### Prerequisites
