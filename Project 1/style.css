@@ -2,32 +2,6 @@ body {
     background-image: url("images/white_wall_hash_@2X.png");
 }
 
-/*Top Navbar*/
-
-/*================================================================================*/
-
-nav {
-    /*background: linear-gradient(#4ba2ac, #50c9ba);*/
-    /*background-color: #ff5700;*/
-    /*background-image: url("images/background.jpg");*/
-    /*background: #f36523;*/
-    background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
-    height: 90px;
-    padding-left: 350px;
-    padding-right: 50px;
-    padding-top: 10px;
-}
-
-a.brand-logo {
-    color: white;
-}
-
-nav ul a {
-    color: white;
-    font-size: 18px;
-}
-
-
 
 /*Side Navbar*/
 
@@ -96,14 +70,18 @@ textarea.materialize-textarea {
     padding-left: 300px;
 }
 
+
+/*artist name */
+
 #show {
     font-family: 'Fugaz One', cursive;
     color: white;
     font-size: 35px;
-    text-align: center;
 
 
 }
+
+/*icon with artist name*/
 
 #icon {
     color: white;
@@ -140,16 +118,8 @@ textarea.materialize-textarea {
 
 .collection .collection-item {
     border-bottom: 0px;
-
-
 }
 
-.page-footer {
-    /*margin-top: 10%;*/
-    text-align: center;
-    background: linear-gradient(#4ba2ac, #50c9ba);
-
-}
 
 /* Adds space between Concert Results  */
 
