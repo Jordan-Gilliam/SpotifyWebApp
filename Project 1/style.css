@@ -85,8 +85,15 @@ textarea.materialize-textarea {
 
 #icon {
     color: white;
+    font-size: 40px;
+    line-height: 100px;
+}
+
+#displayArtist {
+    color: white;
     font-size: 50px;
     line-height: 100px;
+    font-weight: bold;
 }
 
 /*Main Content Box*/
@@ -121,10 +128,19 @@ textarea.materialize-textarea {
 
 }
 
+.carousel-item {
+    color: black;
+    text-align: center;
+}
 
+.collapsible-body,
+.waves-effect {
+    color: black;
+}
 
-.stuck {}
-
+.search-keyword:hover {
+    text-decoration: underline;
+}
 
 
 @media only screen and (max-width: 992px) {

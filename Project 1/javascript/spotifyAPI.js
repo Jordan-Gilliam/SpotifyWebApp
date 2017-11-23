@@ -4,7 +4,7 @@ $(document).ready(function() {
     //GLOBAL VARIABLES
     //=========================
 
-
+    var clickedKeyword = "";
 
     //FUNCTIONS
     //==========================
@@ -52,9 +52,16 @@ $(document).ready(function() {
     function searchWithToken(accessToken) {
         var artist = $("#search-input").val().trim();
         spotifySearch(accessToken, artist);
+        $("#displayArtist").text(titleCase(artist));
+    }
+
+    function reSearch(accessToken) {
+        spotifySearch(accessToken, encodeURI(clickedKeyword));
     }
 
     function spotifySearch(accessToken, artist) {
+
+        console.log(accessToken);
 
         var queryURL = "https://api.spotify.com/v1/search?q=" + artist + "&type=artist&market=US&limit=10";
         console.log(queryURL);
@@ -141,18 +148,25 @@ $(document).ready(function() {
             for (var j = 0; j < 5; j++) {
                 var relatedArtist = results.artists[j].name;
 
-                // var artistLink = $("<a>");
-                // artistLink.attr("href", spotifySearch(relatedArtist));
-                // artistLink.text(relatedArtist);
+                var displayRelatedArtist = $('<li class="search-keyword">' + relatedArtist + '</li>').css("margin", "5px");
 
-                $("#relatedArtistContainer").append(relatedArtist + "<br>");
-
+                $("#relatedArtistContainer").append(displayRelatedArtist);
             }
 
         });
 
     }
 
+    function titleCase(str) {
+        str = str.toLowerCase().split(' ');
+
+        for (var i = 0; i < str.length; i++) {
+            str[i] = str[i].split('');
+            str[i][0] = str[i][0].toUpperCase();
+            str[i] = str[i].join('');
+        }
+        return str.join(' ');
+    }
 
 
     //MAIN PROCESS
@@ -160,16 +174,19 @@ $(document).ready(function() {
 
     $("#add-artist").on("click", function(event) {
         event.preventDefault();
-        var artist = $("#search-input").val().trim();
-        console.log(artist);
 
         getAccessToken(searchWithToken);
     });
 
-    $(document).on("click", ".relatedArtist", function(event) {
+    $(document).on("click", ".search-keyword", function(event) {
         event.preventDefault();
-        getAccessToken(searchWithToken);
+
+        clickedKeyword = $(this).text();
+        getAccessToken(reSearch);
+        $("#displayArtist").text($(this).text());
+
     });
 
 
 });
+

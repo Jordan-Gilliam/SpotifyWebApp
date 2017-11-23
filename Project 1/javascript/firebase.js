@@ -52,10 +52,6 @@ $(document).ready(function() {
 
         $("#show").text(newArtistInput);
 
-
-
-
-
         //   Push information into Firebase
 
         db.ref().push({
@@ -88,7 +84,7 @@ $(document).ready(function() {
         console.log("artist name: " + artist);
 
 
-
+        // Comparing previous search to recent search
         if (searches.indexOf(artist) > -1) {
             console.log("artist already exists");
         }
@@ -98,13 +94,13 @@ $(document).ready(function() {
 
             // Write new information to html
             //new div
-            var newDiv = $('<li><a class="waves-effect">' + artist + '</a></li>');
+            var newDiv = $('<li class="search-keyword"><a class="waves-effect">' + artist + '</a></li>');
 
 
             //append new div to html**switched to prepend**
             $("#previousSearch").prepend(newDiv);
 
-
+            // pushing artist to array
             searches.push(artist);
         }
 
