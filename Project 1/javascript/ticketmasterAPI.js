@@ -76,7 +76,7 @@ function handleSearch(artist) {
 
 $(document).on('click', '#add-artist', function(event) {
     event.preventDefault();
-    //pulling User input 
+    //pulling User input
     var artist = $("#search-input").val().trim();
     console.log(artist);
     //calling handleSearch function with argument 'artist'
