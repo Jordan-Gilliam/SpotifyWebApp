@@ -89,19 +89,27 @@ $(document).ready(function() {
             console.log("artist already exists");
         }
         else {
+            // push adds to end, figure out how to insert at index 0...
 
-
-
-            // Write new information to html
-            //new div
-            var newDiv = $('<li class="search-keyword"><a class="waves-effect">' + artist + '</a></li>');
-
-
-            //append new div to html**switched to prepend**
-            $("#previousSearch").prepend(newDiv);
 
             // pushing artist to array
-            searches.push(artist);
+            // .unshift() adds to beginning
+            searches.unshift(artist);
+
+            // empty out previous searches
+            $(".previousSearch").empty();
+
+            // show max of 5, starting at index 0
+            for (var i = 0; i < Math.min(searches.length, 30); i++) {
+                // Write new information to html
+                //new div
+                var newDiv = $('<li class="search-keyword"><a class="waves-effect">' + searches[i] + '</a></li>');
+
+                //append new div to html**switched to prepend**
+                // now, this should be append, not prepend because we're unshifting
+                $(".previousSearch").append(newDiv);
+            }
+
         }
 
 

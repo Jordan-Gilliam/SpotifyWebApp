@@ -33,45 +33,52 @@
 <body>
 
     <!--Sidebar nav-->
-    <ul id="slide-out" class="side-nav fixed">
+    <ul id="slide-out" class="side-nav fixed stick">
 
-        <div class="stuck">
 
-            <li>
-                <div class="user-view">
-                    <div class="background">
-                    </div>
-                    <center><img src="images/finalLogo.png" height="150px" width="200px"></center>
+        <li>
+            <div class="user-view">
+                <div class="background">
                 </div>
-            </li>
+                <center><img src="images/finalLogo.png" height="150px" width="200px"></center>
+            </div>
+        </li>
 
-            <!--Search-->
-            <div class="material-icons" id="searchIcon">search</div><span class="subheader" id="searchHeader">Search for Artist</span>
-            <form>
-                <!--Input-->
-                <input id="search-input" type="text" name="Search Artist" />
-                <!--Button-->
-                <input id="add-artist" type="submit" value="Search" />
-            </form>
-
-            <!--Previous Searches-->
-            <li>
-                <div class="divider"></div>
-            </li>
+        <!--Search-->
+        <div class="material-icons" id="searchIcon">search</div><span class="subheader" id="searchHeader">Search for Artist</span>
+        <form>
+            <!--Input-->
+            <input id="search-input" type="text" name="Search Artist" />
+            <!--Button-->
+            <input id="add-artist" type="submit" value="Search" />
+        </form>
 
 
-
-        </div>
+        <li>
+            <div class="divider"></div>
+        </li>
 
 
 
-        <li><a class="subheader">Previous Searches</a></li>
-        <div id="previousSearch"></div>
+        <li><a id="subheader">Previous Searches</a></li>
+        <div class="previousSearch"></div>
+
+
+    </ul>
+
+    <!--Previous Searches-->
+
+    <ul id="slide-out" class="side-nav fixed scroll">
+
+
+
+        <li><a id="subheader">Previous Searches</a></li>
+        <div class="previousSearch"></div>
 
     </ul>
 
 
-    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons menu">menu</i></a>
     <!--End of Sidebar nav-->
 
     <!--Body-->
@@ -80,13 +87,8 @@
         <!--Main Row-->
         <div class="row">
 
-            <br>
-            <br>
-            <br>
-
             <!--Main Content-->
             <div class="col s12" id="mainContent">
-
 
                 <i class="material-icons" id="icon">add</i><span id="displayArtist"></span>
                 <!--Collection-->
@@ -96,7 +98,7 @@
                     <!--Top Track-->
                     <li class="collection-item avatar">
                         <div class="collapsible-header">
-                            <img src="images/singerIcon.png" alt="" class="circle">
+                            <img src="images/topFive.png" alt="" class="circle">
                             <div class="title">Top Tracks</div>
                             <a href="#!" class="secondary-content"><i class="material-icons">arrow_drop_down</i></a>
                         </div>
@@ -138,7 +140,7 @@
                     <!--Related Artists-->
                     <li class="collection-item avatar">
                         <div class="collapsible-header">
-                            <img src="images/YouTubeMusic.png" alt="" class="circle">
+                            <img src="images/singerIcon.png" alt="" class="circle">
                             <div class="title">Related Artists</div>
                             <a href="#!" class="secondary-content"><i class="material-icons">arrow_drop_down</i></a>
                         </div>
