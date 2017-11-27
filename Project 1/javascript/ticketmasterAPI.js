@@ -89,7 +89,6 @@ $(document).on('click', '#add-artist', function(event) {
 
 });
 
-//
 
 //This is how the user can click 'recent search' artists
 $(document).on('click', '.search-keyword', function() {
@@ -100,23 +99,3 @@ $(document).on('click', '.search-keyword', function() {
     $("#search-input").val("");
 
 });
-
-
-
-
-
-
-
-
-
-// var myObject = {
-// 	name: "Funciton own property"
-// };
-
-// if (myObject.name){
-// 	console.log("it has a name of: " + myObject.name);
-
-// }
-
-// console.log(myObject.hasOwnProperty('name'));
-// console.log('name' in myObject);

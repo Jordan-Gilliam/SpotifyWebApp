@@ -58,7 +58,7 @@ i.material-icons.menu {
 
     top: 320px;
 
-    height: 50%;
+    height: 510px;
 
     padding-bottom: 10px;
 
@@ -138,6 +138,9 @@ textarea.materialize-textarea {
     /*background-image: linear-gradient( 135deg, #69FF97 10%, #00E4FF 100%);*/
     box-shadow: 5px 5px 6px lightgrey;
     padding: 0px 30px;
+    /*margin-top: 70px;*/
+    margin-top: 10%;
+
 }
 
 
