@@ -110,7 +110,7 @@ $(document).ready(function() {
                 var albumDiv = $("<a>");
                 albumDiv.addClass("carousel-item");
                 albumDiv.attr("target", "_blank");
-                albumDiv.text("Top track: " + trackName);
+                albumDiv.text(trackName);
 
                 var image = $("<img>");
                 image.attr("src", results.tracks[i].album.images[1].url);
