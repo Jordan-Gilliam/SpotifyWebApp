@@ -62,10 +62,6 @@ $(document).ready(function() {
 
         }); // end of push information
 
-
-
-
-
         // Console log results
         console.log("Artist: " + newArtistInput);
 
@@ -89,8 +85,6 @@ $(document).ready(function() {
             console.log("artist already exists");
         }
         else {
-            // push adds to end, figure out how to insert at index 0...
-
 
             // pushing artist to array
             // .unshift() adds to beginning
@@ -111,10 +105,6 @@ $(document).ready(function() {
             }
 
         }
-
-
-
-
 
     }); //end of firebase changes
 
