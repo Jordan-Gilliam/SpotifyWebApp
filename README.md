@@ -52,8 +52,7 @@ Music Hub will run on mobile and desktop environments
 See the list of [contributors](https://github.com/Jordan-Gilliam/SpotifyWebApp/contributors) who participated in this project.
 
 ## Hosted Site
-https://jordan-gilliam.github.io/SpotifyWebApp/Project%201/index%20(2).html
-
+https://jordan-gilliam.github.io/SpotifyWebApp/Project%201/index.html
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
