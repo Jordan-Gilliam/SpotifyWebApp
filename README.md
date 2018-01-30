@@ -1,3 +1,4 @@
+<img src="Project 1/images/finalLogo.png" height="350" width="450" >
 # Music Hub
 Search Artist | git scoop
 
