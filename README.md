@@ -1,6 +1,7 @@
 <img src="Project 1/images/finalLogo.png" height="350" width="450" >
+
 # Music Hub
-Search Artist | git scoop
+## Search Artist | git scoop
 
 One search gets you all of the info you need.
 
