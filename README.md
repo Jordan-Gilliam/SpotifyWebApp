@@ -13,7 +13,7 @@ One search gets you all of the info you need.
 
 
 ### Click the dropdown to reveal the artists top tracks.
-![Top Tracks](Project1/images/topTSS.PNG)
+![Top Tracks](/images/topTSS.PNG)
 
 
 ### The next dropdown informs you of the 5 shows.
