@@ -10,25 +10,22 @@ One search gets you all of the info you need.
 
 ### Search on the left or by clicking on one of the trending artist queried below.
 
-
-<img src="Project 1/images/searchSS.PNG" height="300" width="200">
+![Search Bar](images/searchSS.PNG)
 
 
 ### Click the dropdown to reveal the artists top tracks.
+![Top Tracks](/images/topTSS.PNG)
 
-<img src="Project 1/images/topTSS.PNG">
 
 ### The next dropdown informs you of the 5 shows.
+![Artist Shows](/images/showsSS.PNG)
 
-<img src="Project 1/images/showsSS.PNG">
 
 ### Play the artists top Youtube Video.
-
-<img src="Project 1/images/youTSS.PNG">
+![Top YouTube Video](/images/youTSS.PNG)
 
 ### Or even find related Artists.
-
-<img src="Project 1/images/relatedASS.PNG">
+![Related Artists](/images/relatedASS.PNG)
 
 ### Prerequisites
 
